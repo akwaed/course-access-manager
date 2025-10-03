@@ -1,0 +1,29 @@
+:root {
+  /* UK Primary Colors */
+  --uk-wildcat-blue: #0033A0;
+  --uk-white: #FFFFFF;
+  
+  /* UK Secondary Colors */
+  --uk-bluegrass: #1E8AFF;
+  --uk-midnight: #1B365D;
+  --uk-sky: #B1C9E8;
+  --uk-goldenrod: #FFDC00;
+  --uk-sunset: #FFA360;
+  --uk-river-green: #4CBCC0;
+  
+  /* UK Neutral Colors */
+  --uk-cool-neutral: #DCDDDE;
+  --uk-warm-neutral: #D6D2C4;
+  --uk-black: #000000;
+  
+  /* Gradients */
+  --uk-gradient-primary: linear-gradient(135deg, var(--uk-wildcat-blue) 0%, var(--uk-bluegrass) 100%);
+  --uk-gradient-secondary: linear-gradient(135deg, var(--uk-midnight) 0%, var(--uk-wildcat-blue) 100%);
+}
+
+/* Utility Classes */
+.uk-bg-primary { background-color: var(--uk-wildcat-blue); }
+.uk-bg-bluegrass { background-color: var(--uk-bluegrass); }
+.uk-bg-midnight { background-color: var(--uk-midnight); }
+.uk-text-primary { color: var(--uk-wildcat-blue); }
+.uk-text-midnight { color: var(--uk-midnight); }

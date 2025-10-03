@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Build outputs
+frontend/build/
+frontend/dist/
+*.egg-info/
+
+# Environment files
+.env
+.env.local
+.env.production.local
+
+# Data files
+*.db
+*.sqlite
+data/backups/
+*.csv
+!data/Courses.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+ssl/
