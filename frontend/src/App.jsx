@@ -6,13 +6,17 @@ import './App.css';
 function App() {
   const [user, setUser] = useState(null);
 
+  const handleLogout = () => {
+    setUser(null);
+  };
+
   if (!user) {
     return <Login onLogin={setUser} />;
   }
 
   return (
     <div className="App">
-      <CourseAccessManager user={user} />
+      <CourseAccessManager user={user} onLogout={handleLogout} />
     </div>
   );
 }

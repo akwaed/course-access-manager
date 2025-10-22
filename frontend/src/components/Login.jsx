@@ -8,10 +8,15 @@ const Login = ({ onLogin }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     // For now, check against fallback admin
     if (email === 'admin@uky.edu' && password === 'UK2024Admin!') {
-      onLogin({ email, role: 'System Admin' });
+      onLogin({
+        email,
+        role: 'System Admin',
+        first_name: 'Admin',
+        last_name: 'User'
+      });
     } else {
       setError('Invalid credentials');
     }

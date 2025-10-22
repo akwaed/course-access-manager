@@ -800,38 +800,48 @@ async def upload_contacts(file: UploadFile = File(...), user: str = Query(defaul
     """Import contacts from CSV file"""
     try:
         content = await file.read()
-        
+
         # Parse CSV
         import io
         csv_file = io.StringIO(content.decode('utf-8'))
         reader = csv.DictReader(csv_file)
-        
+
         imported_count = 0
+        skipped_count = 0
         for row in reader:
+            # Skip empty rows
+            if not row.get('linkblue'):
+                continue
+
             contact = Contact(
-                linkblue=row['linkblue'],
-                first_name=row['first_name'],
-                last_name=row['last_name'],
-                primary_contact=row.get('primary_contact', '').lower() == 'true',
-                contact_type=row.get('contact_type', 'Department'),
-                college=row['college'],
-                department=row.get('department', 'All'),
-                course=row.get('course'),
-                prefix=row.get('prefix', 'All'),
-                level_type=row.get('level_type', 'Report Viewer'),
-                notes=row.get('notes', '')
+                linkblue=row['linkblue'].strip(),
+                first_name=row['first_name'].strip(),
+                last_name=row['last_name'].strip(),
+                primary_contact=str(row.get('primary_contact', '')).lower() in ['true', '1', 'yes'],
+                contact_type=row.get('contact_type', 'Department').strip(),
+                college=row['college'].strip(),
+                department=row.get('department', 'All').strip() if row.get('department') else 'All',
+                course=row.get('course', '').strip() if row.get('course') else None,
+                prefix=row.get('prefix', 'All').strip() if row.get('prefix') else 'All',
+                level_type=row.get('level_type', 'Report Viewer').strip() if row.get('level_type') else 'Report Viewer',
+                notes=row.get('notes', '').strip() if row.get('notes') else ''
             )
-            
+
             try:
                 db_manager.add_contact(contact, user)
                 imported_count += 1
             except ValueError as e:
                 # Skip duplicates
                 print(f"Skipping duplicate: {e}")
+                skipped_count += 1
                 continue
-        
-        return {"message": f"Imported {imported_count} contacts successfully"}
-        
+
+        return {
+            "message": f"Imported {imported_count} contacts successfully",
+            "imported": imported_count,
+            "skipped": skipped_count
+        }
+
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error importing contacts: {str(e)}")
 
@@ -841,11 +851,11 @@ async def get_audit_log(limit: int = 100):
     with db_manager.get_db() as conn:
         cursor = conn.cursor()
         cursor.execute("""
-            SELECT * FROM audit_log 
-            ORDER BY timestamp DESC 
+            SELECT * FROM audit_log
+            ORDER BY timestamp DESC
             LIMIT ?
         """, (limit,))
-        
+
         logs = []
         for row in cursor.fetchall():
             log = dict(row)
@@ -854,8 +864,72 @@ async def get_audit_log(limit: int = 100):
             if log.get('new_values'):
                 log['new_values'] = json.loads(log['new_values'])
             logs.append(log)
-        
+
         return logs
+
+@app.post("/api/generate/hierarchy")
+async def generate_hierarchy_file():
+    """Generate hierarchy CSV file from course data"""
+    try:
+        import io
+        from fastapi.responses import StreamingResponse
+
+        # Check if course.csv exists
+        course_csv_path = DATA_DIR / "course.csv"
+        if not course_csv_path.exists():
+            raise HTTPException(status_code=404, detail="Course CSV file not found. Please upload course.csv first.")
+
+        # Read the course.csv file
+        with open(course_csv_path, 'r', encoding='utf-8') as f:
+            course_data = f.read()
+
+        # Create a StringIO object to work with the CSV
+        csv_input = io.StringIO(course_data)
+        reader = csv.DictReader(csv_input)
+
+        # Prepare output CSV
+        output = io.StringIO()
+
+        # Define all expected hierarchy columns based on user's sample
+        hierarchy_columns = [
+            'SECTION_KEY', 'TITLE', 'CANVAS_SIS_ID', 'CRS_SECTION', 'PREFIX', 'CLASS',
+            'CLASS_ID', 'SECTION', 'SECTION_ID', 'ACADEMIC_YEAR', 'ACADEMIC_TERM_ID',
+            'ACADEMIC_TERM', 'SECTION_TITLE', 'SECTION_BEGIN_DATE', 'SECTION_END_DATE',
+            'SECTION_LENGTH_DAYS', 'TCE_INVITE', 'TCE_R1', 'TCE_R2', 'TCE_END_DATE',
+            'TCE_REPORT_DATE', 'CLASS_DEPARTMENT', 'CLASS_DEPARTMENT_ID', 'CLASS_COLLEGE',
+            'CLASS_COLLEGE_SHORT', 'CLASS_LEVEL', 'IS_CROSSLISTED', 'CROSSLISTED_ID',
+            'DISTANCE_LEARNING', 'IS_UK_CORE', 'UK_CORE_TYPE', 'SPEC_TYPE'
+        ]
+
+        writer = csv.DictWriter(output, fieldnames=hierarchy_columns)
+        writer.writeheader()
+
+        # Process each row and write to output
+        for row in reader:
+            # Create a new row with all expected columns, filling missing ones with empty strings
+            hierarchy_row = {}
+            for col in hierarchy_columns:
+                hierarchy_row[col] = row.get(col, '')
+
+            writer.writerow(hierarchy_row)
+
+        # Get the CSV content
+        output.seek(0)
+        csv_content = output.getvalue()
+
+        # Return as downloadable file
+        return StreamingResponse(
+            io.BytesIO(csv_content.encode('utf-8')),
+            media_type="text/csv",
+            headers={
+                "Content-Disposition": f"attachment; filename=hierarchy_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+            }
+        )
+
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Course CSV file not found")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error generating hierarchy file: {str(e)}")
 
 @app.post("/api/auth/login")
 async def login(credentials: HTTPBasicCredentials = Depends(HTTPBasic())):
