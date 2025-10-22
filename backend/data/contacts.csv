@@ -1,0 +1,130 @@
+id,linkblue,first_name,last_name,primary_contact,contact_type,college,department,course,prefix,level_type
+1,ctande2,Carmen,Agouridis,false,College,"Ag, Food and Environment",All,,All,Subject Viewer
+2,jcwelc2,Jeff,Welch,false,College,Business & Economics,All,,All,Subject Viewer
+3,jdunn2,Jamie,Dunn,false,College,"Ag, Food and Environment",All,,All,Report Viewer
+4,alsp234,Audrey,Sparks,false,College,Graduate School,Martin School of Public Administration,,All,Report Viewer
+5,ttsmit01,Teresa,Smith,false,College,Arts and Sciences,All,,All,Subject Viewer
+6,jbho223,Jesse,Hoagg,false,Department,Engineering,Mechanical Engineering,,All,Report Viewer
+7,mhuff0,Melissa,Beaven,false,College,Business & Economics,All,,All,Subject Viewer
+8,rmu223,Rena,Keath,false,College,Business & Economics,All,,All,Subject Viewer
+9,wjbunt0,Will,Buntin,false,Department,Communication and Information,Communication and Information Studies,,All,Subject Viewer
+10,hjbu222,Heather,Burke,false,Department,Communication and Information,Communication and Information Studies,,All,Subject Viewer
+11,lmmo267,Leigh,Moscowitz,false,Department,Communication and Information,Integrated Strategic Communication,,All,Report Viewer
+12,wjbunt0,Will,Buntin,false,Department,Communication and Information,School of Information Science,,All,Subject Viewer
+13,hjbu222,Heather,Burke,false,Department,Communication and Information,School of Information Science,,All,Subject Viewer
+14,ejen226,Erika,Engstrom,false,Department,Communication and Information,School of Journalism and Media,,All,Report Viewer
+15,shearl2,Suanne,Early,false,College,Communication and Information,All,,All,Subject Viewer
+16,dchun2,Deborah,Chung,false,College,Communication and Information,All,,All,Subject Viewer
+17,swingr1,Steven,Ingram,false,Department,Communication and Information,Communication,,All,Subject Viewer
+18,cjmato2,Christopher,Matocha,false,College,"Ag, Food and Environment",Agriculture General,,NRE,Report Viewer
+19,jgr357,Jennifer,Greer,false,College,Communication and Information,All,,All,Report Viewer
+20,YCH311,Youngok,Choi,false,Department,Communication and Information,School of Information Science,,All,Report Viewer
+21,kdod222,Dakota,O'Dell,false,Department,Communication and Information,Communication and Information Studies,,CI,Subject Viewer
+22,aswan2,Azhar,Swanson,false,College,Design,All,,,subject viewer
+23,jbbo231,Jennie,Boyd,false,College,Design,All,,All,Subject Viewer
+24,lahu229,Lori,Hunley,false,Department,Education,"Early Childhood, Spec Ed & Counselor Ed",,All,Report Viewer
+25,plcoak2,Patricia,Coakley,false,College,"Ag, Food and Environment",All,,All,Report Viewer
+26,jnthom0,Jonathan,Thomas,false,Department,Education,Education,,All,Report Viewer
+27,jnthom0,Jonathan,Thomas,false,Department,Education,"Educational, School and Counseling Psych",,All,Report Viewer
+28,sbalfo2,Sara,Police,false,Department,Medicine,Dept of Pharmacology & Nutritional Scien,,All,Report Viewer
+29,vrba223,Victoria,Ballengee,false,Department,Education,"Educational, School and Counseling Psych",,All,Report Viewer
+30,dlki239,Dianna,Kidd,false,Department,Education,Kinesiology - Health Promotion,,All,Report Viewer
+31,eagrah0,Beth,Graham,false,Department,Education,Kinesiology - Health Promotion,,All,Report Viewer
+32,jnthom0,Jonathan,Thomas,false,Department,Education,STEM Education,,All,Report Viewer
+33,mawill3,Mary Ann,Williamson,false,Department,Communication and Information,School of Journalism and Media,,All,Report Viewer
+34,mrhrab0,Mary,Henderson,false,College,Education,All,,All,Subject Viewer
+35,ctande2,Carmen,Agouridis,false,Department,Engineering,Engineering,,BAE,Subject Viewer
+36,jrwagn2,Jacqueline,McCuddy,false,Department,Engineering,Engineering,,BAE,Subject Viewer
+37,jfoley,Jessica,Ripley,false,College,Engineering,All,,All,Subject Viewer
+38,djka227,David,Kaiser,false,College,Fine Arts,All,,All,Subject Viewer
+39,jmfilk00,Joanne,Filkins,false,Department,Fine Arts,Fine Arts -  Music,,All,Subject Viewer
+40,scsm242,Sarah,Smith,false,Department,Fine Arts,Fine Arts -  Theatre Arts,,All,Subject Viewer
+41,mjpi235,Meghan,Pifer,false,Department,Education,Educational Policy Studies and Evaluatio,,All,Report Viewer
+42,khperr2,Kristen,Perry,false,Department,Graduate School,Graduate School,,All,Report Viewer
+43,rwzimm00,Ron,Zimmer,false,Department,Graduate School,Martin School of Public Administration,,All,Report Viewer
+44,name232,Nash,Meade,false,Department,Graduate School,Patterson School Of Diplomacy,,All,Subject Viewer
+45,cgad222,Chelsea,Harris,false,College,Lewis Honors College,All,,All,Subject Viewer
+46,srtw223,Ruth,Twine,false,College,Health Sciences,All,,All,Report Viewer
+47,jkupe0,Janice,Kuperstein,false,College,Health Sciences,All,,All,Subject Viewer
+48,pagr224,Phillip,Gribble,false,Department,Health Sciences,Athletic Training and Clinical Nutrition,,All,Report Viewer
+49,scave2,Sarah,Kercsmar,false,Department,Health Sciences,College of Health Sciences,,All,Report Viewer
+50,scave2,Sarah,Kercsmar,false,Department,Health Sciences,Health and Clinical Sciences,,All,Report Viewer
+51,aolso2,Anne,Olson,false,Department,Health Sciences,Communication Sciences and Disorders,,All,Report Viewer
+52,vva225,Virginia,Valentin,false,Department,Health Sciences,Physician Assistant Studies,,All,Report Viewer
+53,ppa302,Patrick,Pabian,false,Department,Health Sciences,Physical Therapy,,All,Report Viewer
+54,pjame2,Pearl,James,false,College,Lewis Honors College,All,,All,Subject Viewer
+55,asand1,Avalon,Sandoval,false,Department,Medicine,Department of Neuroscience,,All,Subject Viewer
+56,sctr225,Sarah,Treberg,false,Department,Medicine,Behavioral Science,,All,Subject Viewer
+57,bsz222,Bridget,Szczapinski,false,College,Medicine,All,,All,Subject Viewer
+58,bsz222,Bridget,Szczapinski,false,Department,Medicine,Integrated Biomedical Sciences,,All,Subject Viewer
+59,bsz222,Bridget,Szczapinski,false,Department,Medicine,"Microbiology, Immunology & Molecular Gen",,All,Subject Viewer
+60,bsz222,Bridget,Szczapinski,false,Department,Medicine,Molecular and Cellular Biochemistry,,All,Subject Viewer
+61,bsz222,Bridget,Szczapinski,false,Department,Medicine,Physiology,,All,Subject Viewer
+62,jrth243,Julien,Thibault,false,Department,Medicine,Dept of Pharmacology & Nutritional Scien,,All,Subject Viewer
+63,mellon,Isabel,Mellon,false,Department,Medicine,Toxicology and Cancer Biology,,All,Subject Viewer
+64,rpe233,Rachel,Pendleton,false,Department,Medicine,Radiation Medicine,,All,Subject Viewer
+65,rpe233,Rachel,Pendleton,false,Department,Medicine,Radiation Science,,All,Subject Viewer
+66,crol226,Cherish,Oliver,false,Department,Medicine,Toxicology and Cancer Biology,,All,Report Viewer
+67,pkarne2,Paula,Arnett,false,College,Public Health,All,,All,Report Viewer
+68,ajball3,Angela,Grubbs,false,College,Nursing,All,,All,Subject Viewer
+69,PWEST2,Philip,Westgate,false,Department,Public Health,Dept Of Biostatistics,,All,Subject Viewer
+70,elabne0,Erin,Abner,false,Department,Public Health,Dept of Epidemiology & Environ Health,,All,Subject Viewer
+71,ldst243,Lindsey,Munoz,false,College,Social Work,All,,All,Subject Viewer
+72,rrbr222,Rachel,Deel,false,Course Coordinator,Office of the Provost,Office of the Provost,101,UK,Subject Viewer
+73,rrbr222,Rachel,Deel,false,Course Coordinator,Office of the Provost,Office of the Provost,201,UK,Subject Viewer
+74,amli227,Anthony,Limperos,false,Department,Communication and Information,Communication,,All,Report Viewer
+75,amli227,Anthony,Limperos,false,Department,Communication and Information,Communication and Information Studies,,CI,Report Viewer
+76,cjkn225,Colleen,Knight,false,College,Arts and Sciences,All,,All,Subject Viewer
+77,rrbr222,Rachel,Deel,false,Course Coordinator,Office of the Provost,Office of the Provost,125,UK,Subject Viewer
+78,PCTA224,Paula,Tackett,false,Department,Fine Arts,School of Art and Visual Studies,,All,Report Viewer
+79,sth236,Susie,Thiel,false,Department,Fine Arts,Fine Arts -  Theatre Arts,,All,Report Viewer
+80,RSH226,Rachel,Shane,false,College,Fine Arts,All,,All,Report Viewer
+81,RADAM3,Ruth,Adams,false,Department,Fine Arts,School of Art and Visual Studies,,All,Report Viewer
+82,agte224,Abby,Temple,false,Department,Fine Arts,Fine Arts -  Music,,All,Report Viewer
+83,AYEF223,Alesia,Efflandt,false,Department,Fine Arts,Arts Administration,,All,Report Viewer
+84,cbarno2,Ben,Arnold,false,Department,Fine Arts,Fine Arts -  Music,,All,Report Viewer
+85,kgr283,Katherine,Gray,false,Department,Education,Educational Policy Studies and Evaluatio,,All,Report Viewer
+86,RCR234,Margaret,Rintamaa,false,College,Education,All,,All,Report Viewer
+87,ademi0,Aslihan,Spaulding,false,Department,"Ag, Food and Environment",Agr Economics,,All,Report Viewer
+88,tka234,Tomokazu,Kawashima,false,Department,"Ag, Food and Environment",Agricultural Biotechnology,,All,Report Viewer
+89,rwharr00,Wes,Harrison,false,Department,"Ag, Food and Environment",Agricultural Education,,All,Report Viewer
+90,jsra234,Scott,Radcliffe,false,Department,"Ag, Food and Environment",Animal and Food Sciences,,All,Report Viewer
+91,montross,Mike,Montross,false,Department,"Ag, Food and Environment",Biosystems & Agr Engineering,,All,Report Viewer
+92,rwharr00,Wes,Harrison,false,Department,"Ag, Food and Environment",Community & Leadership Development,,All,Report Viewer
+93,tjhann00,Tammy,Stephenson,false,Department,"Ag, Food and Environment",Dietetics and Human Nutrition,,All,Report Viewer
+94,rpalli,Subba,Palli,false,Department,"Ag, Food and Environment",Entomology,,All,Report Viewer
+95,pdyk,Patricia,Dyk,false,Department,"Ag, Food and Environment",Family Sciences,,All,Report Viewer
+96,sjpr223,Steven,Price,false,Department,"Ag, Food and Environment",Forestry and Natural Resources,,All,Report Viewer
+97,mawillia,Mark,Williams,false,Department,"Ag, Food and Environment",Horticulture,,All,Report Viewer
+98,csa233,Christopher,Sass,false,Department,"Ag, Food and Environment",Landscape Architecture,,All,Report Viewer
+99,rlmccu2,Rebecca,McCulley,false,Department,"Ag, Food and Environment",Plant and Soil Sciences,,All,Report Viewer
+100,rpalli,Subba,Palli,false,Department,"Ag, Food and Environment",Plant Pathology,,All,Report Viewer
+101,mlee6,Min-Young,Lee,false,Department,"Ag, Food and Environment",Retailing & Tourism Management,,All,Report Viewer
+102,jhunter,Jennifer,Hunter,false,Department,"Ag, Food and Environment",School of Human Environmental Sciences,,All,Report Viewer
+103,klja223,Krista,Jacobsen,false,Department,"Ag, Food and Environment",Sustainable Agriculture,,All,Report Viewer
+104,basp238,Brett,Sponseller,false,Department,"Ag, Food and Environment",Veterinary Science,,All,Report Viewer
+105,lsbrys2,Sebastian,Bryson,false,Department,Engineering,Civil Engineering,,All,Report Viewer
+106,skro233,Sarah,Robbins,false,College,Public Health,All,,,subject viewer
+107,sccant00,Susan,Cantrell,false,College,Education,All,,All,Subject Viewer
+108,scave2,Sarah,Kercsmar,false,Department,Health Sciences,Allied Health Education and Research,,All,Report Viewer
+109,scave2,Sarah,Kercsmar,false,Department,Health Sciences,Health Sciences Education,,All,Report Viewer
+110,lmc305,Lali,McCubbin,false,Department,Education,"Educational, School and Counseling Psych",,All,Report Viewer
+111,yjo229,Joseph,Young,false,Department,Graduate School,Patterson School Of Diplomacy,,All,Subject Viewer
+112,mamo320,Matthew,Moore,false,College,Social Work,All,,All,Report Viewer
+113,jfdu227,Jackie,Duron,false,College,Social Work,All,,All,Report Viewer
+114,jnmacl2,James,MaclLeod,false,Course Coordinator,"Ag, Food and Environment",Agriculture General,,EQM,Report Viewer
+115,abhijit,Abhijit,Patwardhan,false,Department,Engineering,Biomedical Engineering,,All,Report Viewer
+116,scave2,Sarah,Kercsmar,false,Department,Health Sciences,Clinical Sciences,,All,Report Viewer
+117,abwilk0,Ashley,Hays,false,College,Health Sciences,All,,All,Report Viewer
+118,herwi2,Heather,Erwin,false,Department,Education,Kinesiology - Health Promotion,,,report viewer
+119,brous,Beth,Rous,false,Department,Education,Educational Leadership Studies,,,report viewer
+120,jdla234,Justin ,Lane,false,Department,Education,"Early Childhood, Spec Ed & Counselor Ed",,,report viewer
+121,rdowd0,Ray,Dowd,false,Department,Social Work,,,,subject viewer
+122,dherrin,David,Herrin,false,Department,Engineering,Mechanical Engineering,,,report viewer
+123,che202,Kim,Anderson,false,Department,Engineering,Chemical & Materials Engineeri,,,subject viewer
+124,tddziu2,Thomas,Dziubla,false,Department,Engineering,Chemical & Materials Engineeri,,,subject viewer
+125,rahogg2,Rachel,Graham,false,Department,Public Health,Dept of Health Mgmt & Policy,,,subject viewer
+126,brous,Beth,Rous,false,Department,Education,Educational Leadership Studies,,,report viewer
+127,ksre234,Keely,Rees,false,Department,Public Health,"Department of Health, Behavior & Society",,,report viewer
+128,elabne0,Erin,Abner,false,Department,Public Health,Dept Of Preventive Med & Envir,,,subject viewer
+130,rahogg2,Rachel Hogg,Graham,false,Department,Public Health,Dept of Health Mgmt & Policy,,,report viewer
