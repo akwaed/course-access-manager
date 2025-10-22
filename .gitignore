@@ -19,8 +19,7 @@ frontend/dist/
 *.db
 *.sqlite
 data/backups/
-*.csv
-!data/Courses.csv
+
 
 # IDE
 .vscode/
